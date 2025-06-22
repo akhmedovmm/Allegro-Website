@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <title>Our Services | Allegro Export</title>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">Allegro Export</div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a class="active" href="{{ url_for('services') }}">Services</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ <section class="services-section container">
+  <div class="cards-grid">
+    <div class="card">
+      </h2>Car Export Services</h2>
+      <p>We export high-quality vehicles from Canada, USA, Mexico, EU, and UAE.</p>
+    </div>
+    <div class="card">
+      <h2>🛡️ Armored Vehicle Export</h2>
+      <p>Official INKAS Canada dealer since 2025—offering executive SUVs, tactical, and cash-transit vehicles.</p>
+    </div>
+    <div class="card">
+      <h2>🇨🇦 Affiliation & Reach</h2>
+      <p>Affiliate of Allegro Auto LLC, former Hyundai & BYD dealer in Western Uzbekistan (2020–2024).</p>
+    </div>
+    <div class="card">
+      <h2>🌍 Vision & Growth</h2>
+      <p>Commitment to expanding premium and armored vehicle exports globally.</p>
+    </div>
+  </div>
+  <a href="{{ url_for('contact') }}" class="hero-btn">Request a Quote</a>
+</section>
+
+  <footer class="footer">
+    <div class="footer-content container">
+      <p>© 2025 Allegro Export. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

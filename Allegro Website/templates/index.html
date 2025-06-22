@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <title>Allegro Export</title>
+  
+
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">Allegro Export</div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('services') }}">Services</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="overlay"></div> 
+
+    <div class="hero-text">
+      <h1>Your Global Export Partner</h1>
+      <p>Reliable. Efficient. Worldwide.</p>
+      <a href="#" class="hero-btn">Get Started</a>
+    </div>
+    <img src="{{ url_for('static', filename='images/686446.jpg') }}" alt="Hero image">
+
+  </section>
+
+  <section class="car-gallery">
+    <h2 class="section-title">Our Car Selection</h2>
+    <div class="car-grid">
+      <div class="car-card">
+        <img src="{{ url_for('static', filename='images/cadillac.jpg') }}" alt="Hero image">
+
+        <h3>ESCALADE V-SPORT</h3>
+        <p>Engine, 6.2L supercharged V8 transmission, 10-Speed Auto.</p>
+      </div>
+      <div class="car-card">
+        <img src="{{ url_for('static', filename='images/lexus.jpg') }}" alt="Hero image">
+
+        <h3>Lexus LX 700h Luxury</h3>
+        <p>Hybrid Engine: 3.4L, Twin-Turbo V6. Transmission 10-Speed Auto.</p>
+      </div>
+      <div class="car-card">
+        <img src="{{ url_for('static', filename='images/bmw.jpg') }}" alt="Hero image">
+
+        <h3>BMW M850i</h3>
+        <p>523 hp, Transmission Auto, Speed-250 km/h</p>
+      </div>
+      <!-- Add more cars here -->
+      <div class="car-card">
+        <img src="{{ url_for('static', filename='images/toyota.jpg') }}" alt="Hero image">
+
+        <h3>TOYOTA SEQUOIA</h3>
+        <p>Twin Turbo V6 Hybrid, 437 hp, Transmission 10-Speed Auto.</p>
+      </div>
+      <div class="car-card">
+        <img src="{{ url_for('static', filename='images/bmw_m650.jpg') }}" alt="Hero image">
+
+        <h3>BMW X7 M650i</h3>
+        <p>2025 BMW x7 M650i, Automatic Transmission</p>
+      </div>
+      <div class="car-card">
+        <img src="{{ url_for('static', filename='images/lexus_gx550.jpg') }}" alt="Hero image">
+
+        <h3>LEXUS GX 550 LUXURY</h3>
+        <p>Engine 3.4L, Twin-Turbo V6, 349 hp. Transmission 10-Speed Auto.</p>
+      </div>
+      <div class="car-card">
+        <img src="{{ url_for('static', filename='images/cadillac_sport.jpg') }}" alt="Hero image">
+
+        <h3>CADILLAC IQ SPORT</h3>
+        <p>Dual Motor AWD, 4-Wheel Steer.</p>
+      </div>
+      <div class="car-card">
+        <img src="{{ url_for('static', filename='images/maybach_680.jpg') }}" alt="Hero image">
+
+        <h3>MERCEDES-MAYBACH S 680</h3>
+        <p></p>
+      </div>
+    </div>
+    
+  </section>
+  
+  <section class="about-section">
+    <div class="about-content">
+      <h2>About Allegro Export</h2>
+      <p>
+        At Allegro Export, we specialize in sourcing and exporting high-quality vehicles from around the world. 
+        Our mission is to connect you with top-tier cars that suit your style, needs, and budget.
+      </p>
+      <p>
+        With a network of trusted partners, we ensure each car is thoroughly inspected, documented, and ready for seamless global delivery. 
+        Whether you're looking for luxury, performance, or reliability — we’ve got your wheels covered.
+      </p>
+      <a href="{{ url_for('about') }}" class="about-btn">More Details</a>
+    </div>
+    <div class="about-image">
+      <img src="{{ url_for('static', filename='images/about-allegro.jpg') }}" alt="Hero image">
+
+    </div>
+  </section>
+  
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h3>Allegro Export</h3>
+      <p>Your trusted partner for global vehicle exports.</p>
+  
+      <p class="footer-phone">📞 +1 365 833 4101</p>
+      <p class="footer-location">📍 655 Dixon Road, Etobicoke, ON , M9W 1J3 Canada</p>
+  
+      <div class="footer-socials">
+        <a href="https://wa.me/11234567890" target="_blank">WhatsApp</a>
+        <a href="https://www.linkedin.com/in/umid-akhmedov-93142741/" target="_blank">LinkedIn</a>
+      </div>
+  
+      <p class="footer-bottom">© 2025 Allegro Export. All rights reserved.</p>
+    </div>
+  </footer>
+  
+
+</body>
+</html>

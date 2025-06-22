@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <title>Contact Us</title>
+  
+
+</head>
+<body>
+  <section class="contact-section">
+    <h2>Contact Us About a Car</h2>
+
+    {% with msgs = get_flashed_messages() %}
+      {% if msgs %}
+        <p class="flash">{{ msgs[0] }}</p>
+      {% endif %}
+    {% endwith %}
+
+    <form action="{{ url_for('submit') }}" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="whatsapp" placeholder="WhatsApp Number" required>
+      <input type="text" name="car" placeholder="Car You're Interested In" required>
+      <input type="text" name="country" placeholder="Your Country" required>
+      <textarea name="message" placeholder="Your Message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>

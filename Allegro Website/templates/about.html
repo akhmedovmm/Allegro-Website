@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <title>About Allegro Export</title>
+  
+
+</head>
+<body>
+
+  <header class="simple-header">
+    <h1>About Allegro Export</h1>
+    <a href="{{ url_for('index') }}" class="back-home">← Back to Home</a>
+  </header>
+
+  <section class="about-page-content">
+    <p>
+      Allegro Services Inc is an affiliate of the company in Uzbekistan, Allegro Auto LLC which was the dealer of Hyundai Distribution Uzbekistan in western region of Uzbekistan between 2020-2024, and the dealer of BYD Distribution Uzbekistan between 2023-2024. 
+      The long-term vision of Allegro Services Inc  is to gradually grow the business  and expand the territories to export high tech vehicles from Canada, USA, Mexico, EU and UAE.
+    </p>
+    <div class="about-image-card">
+      <img src="{{ url_for('static', filename='images/about-allegro.jpg') }}" alt="About Allegro Export">
+    </div>
+
+    <div class="about-image-card1">
+      <img src="{{ url_for('static', filename='images/byd.jpg') }}" alt="About Allegro Export">
+    </div>
+
+    <div class="about-image-card2">
+      <img src="{{ url_for('static', filename='images/hyundai.jpg') }}" alt="About Allegro Export">
+    </div>
+
+    <p>
+      Allegro Services Inc has been authorised as the dealer  to sell armouring vehicles of INKAS Canada since 2025.
+    </p>
+    <div class="about-image-card3">
+      <img src="{{ url_for('static', filename='images/inkas.jpg') }}" alt="About Allegro Export">
+    </div>
+
+    <!-- Add more story, timeline, or company values here -->
+  </section>
+
+</body>
+</html>
