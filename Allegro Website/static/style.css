@@ -541,3 +541,19 @@
   color: #444;
   flex: 1;
 }
+
+.about-logo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.about-logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+.omvic_text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-weight: 500;
+}
