@@ -183,6 +183,7 @@
   color: white;
 }
 
+/*CAR GRID*/
 .car-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -219,7 +220,15 @@
   font-size: 20px;
 }
 
+.car-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
 
+
+/*ABOUT SECTION*/
 .about-section {
   display: flex;
   flex-wrap: wrap;
@@ -541,6 +550,7 @@
   color: #444;
   flex: 1;
 }
+
 
 .about-logo {
   text-align: center;
