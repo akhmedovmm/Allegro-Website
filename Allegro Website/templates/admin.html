@@ -1,0 +1,16 @@
+<form method="POST" enctype="multipart/form-data">
+  <label for="car_id">Select Car:</label>
+  <select name="car_id">
+    {% for car_id in cars %}
+      <option value="{{ car_id }}">{{ car_id }}</option>
+    {% endfor %}
+  </select><br><br>
+
+  <label for="file">Upload PDF:</label>
+  <input type="file" name="file"><br><br>
+
+  <label for="password">Admin Password:</label>
+  <input type="password" name="password"><br><br>
+
+  <button type="submit">Upload</button>
+</form>
