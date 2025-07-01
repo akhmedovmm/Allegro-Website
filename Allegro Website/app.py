@@ -26,7 +26,7 @@ data = {
         'description': '523 hp, Transmission Auto, Speed-250 km/h',
         'pdf': None
     },
-    'toyota': {
+    'toyota_trd': {
         'name': 'TOYOTA SEQUOIA',
         'description': 'Twin Turbo V6 Hybrid, 437 hp, Transmission 10-Speed Auto',
         'pdf': None
